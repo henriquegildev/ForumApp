@@ -19,7 +19,6 @@ object Api {
             connectTimeout = TIME_OUT
             socketTimeout = TIME_OUT
         }
-        this.expectSuccess = false
 
         install(JsonFeature) {
             serializer = KotlinxSerializer(kotlinx.serialization.json.Json {
