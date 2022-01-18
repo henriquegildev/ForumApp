@@ -13,7 +13,6 @@ data class Post(
     val comments: List<Comment> = listOf()
 )
 
-
 @Serializable
 data class Comment(
     val postId: Int,

@@ -1,11 +1,11 @@
 package pt.ipbeja.forumapp.ui.createpost
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import pt.ipbeja.forumapp.R
 
 class CreatePostFragment : Fragment() {

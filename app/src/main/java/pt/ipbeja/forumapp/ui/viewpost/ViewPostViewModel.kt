@@ -5,7 +5,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import pt.ipbeja.forumapp.remote.Api
 
 class ViewPostViewModel(val postId: Int) : ViewModel() {
 

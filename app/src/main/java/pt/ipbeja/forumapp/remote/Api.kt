@@ -1,17 +1,11 @@
 package pt.ipbeja.forumapp.remote
 
-import android.util.Log
 import io.ktor.client.*
 import io.ktor.client.engine.android.*
 import io.ktor.client.features.auth.*
 import io.ktor.client.features.auth.providers.*
 import io.ktor.client.features.json.*
 import io.ktor.client.features.json.serializer.*
-import io.ktor.client.features.logging.*
-import io.ktor.client.features.observer.*
-import io.ktor.client.request.*
-import io.ktor.client.statement.*
-import kotlinx.serialization.json.Json
 
 object Api {
 
@@ -38,7 +32,7 @@ object Api {
         install(Auth) {
 
             basic {
-                credentials { BasicAuthCredentials("admin", "administradeiro#123") } // TODO user/pass
+                credentials { BasicAuthCredentials("user", "pass") } // TODO user/pass
             }
         }
 
@@ -71,6 +65,5 @@ object Api {
 
     // Unsure
     //  POST - addLike (add a like to a Post) -> https://pdm-21-forum.duckdns.org/forum/likes -> Body is the postId
-
 
 }

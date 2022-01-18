@@ -1,11 +1,7 @@
 package pt.ipbeja.forumapp
 
-import io.ktor.utils.io.*
-import kotlinx.coroutines.runBlocking
+import org.junit.Assert.assertEquals
 import org.junit.Test
-
-import org.junit.Assert.*
-import pt.ipbeja.forumapp.remote.Api
 
 /**
  * Example local unit test, which will execute on the development machine (host).

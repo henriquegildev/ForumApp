@@ -1,8 +1,7 @@
 package pt.ipbeja.forumapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import pt.ipbeja.forumapp.ui.main.MainFragment
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
