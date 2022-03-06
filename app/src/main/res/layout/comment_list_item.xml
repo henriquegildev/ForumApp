@@ -37,42 +37,20 @@
             android:id="@+id/body"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:ellipsize="end"
             android:lines="1"
             android:textColor="@color/black"
-            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/likeBtn"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="@tools:sample/lorem/random" />
-
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:src="@drawable/ic_baseline_comment_24"
-            app:layout_constraintEnd_toStartOf="@+id/likeBtn"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/comments"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-            app:layout_constraintBottom_toBottomOf="@+id/likeCounter"
-            app:layout_constraintEnd_toStartOf="@+id/likeBtn"
-            app:layout_constraintStart_toEndOf="@+id/author"
-
-            tools:text="1" />
 
         <TextView
             android:id="@+id/author"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-            app:layout_constraintEnd_toStartOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/body"
             tools:text="@tools:sample/full_names" />

@@ -20,6 +20,7 @@ class MainViewModel : ViewModel() {
     val posts : Flow<Resource<List<Post>>> = _posts
 
     // Example with LiveData
+
     private val _postsLD : MutableLiveData<Resource<List<Post>>> = MutableLiveData()
     val postsLD : LiveData<Resource<List<Post>>> = _postsLD
 

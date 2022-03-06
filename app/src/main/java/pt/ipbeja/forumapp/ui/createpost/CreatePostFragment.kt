@@ -6,27 +6,31 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import pt.ipbeja.forumapp.R
+import pt.ipbeja.forumapp.databinding.CreatePostFragmentBinding
+import pt.ipbeja.forumapp.remote.Api
+import pt.ipbeja.forumapp.remote.Post
 
 class CreatePostFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = CreatePostFragment()
-    }
-
+    private lateinit var binding: CreatePostFragmentBinding
     private lateinit var viewModel: CreatePostViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.create_post_fragment, container, false)
-    }
+    ) = CreatePostFragmentBinding.inflate(inflater).let {
+            this.binding = it
+            it.root
+        }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(CreatePostViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        binding.submit.setOnClickListener{
+            // TODO: Implement Posts
+        }
     }
 
 }
